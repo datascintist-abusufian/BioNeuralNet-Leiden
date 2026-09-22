@@ -12,22 +12,9 @@ The distinction that motivates this repository is between **Louvain** and **Leid
 
 ## Pipeline
 
-```mermaid
-flowchart TD
-A[Multi-omics matrices: RNA, miRNA, methylation, CNV] --> B[Preprocessing: imputation, normalisation, variance filtering]
-B --> C[Network construction: correlation-based weighted adjacency matrix]
-C --> D[Community detection]
-D --> E[Louvain modularity maximisation: upstream implementation]
-D -.-> F[Leiden refinement: planned, not implemented in this repository]
-E --> G[Induced subnetwork per module]
-F -.-> G
-G --> H[Module summarisation: PCA first principal component]
-H --> I[Phenotype association: Pearson coefficient and p-value]
-I --> J[Ranked candidate biomarker modules]
-J --> K[Visualisation: network topology, embeddings, variance, performance]
-```
+![Fig. 1: BioNeuralNet-Leiden analysis pipeline, from multi-omics input matrices through preprocessing, correlation network construction, Louvain community detection with the planned Leiden refinement, module summarisation by PC1 and phenotype association, to ranked candidate biomarker modules](assets/fig1_pipeline.svg)
 
-Solid arrows correspond to code that exists, either in this repository or in the upstream package. The dashed path is the intended contribution and does not exist yet.
+*Fig. 1 | Analysis pipeline.* Solid outlines and arrows correspond to code that exists, either in this repository or in the upstream package. The dashed Leiden path is the intended contribution and does not exist yet.
 
 ## Repository contents
 
