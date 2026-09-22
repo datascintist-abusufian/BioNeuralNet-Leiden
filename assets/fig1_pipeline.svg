@@ -1,100 +1,90 @@
  <svg xmlns="http://www.w3.org/2000/svg" width="1240" height="680" viewBox="0 0 1240 680">
-    <rect x="0" y="0" width="1240" height="680" fill="#ffffff"/>
-    <defs>
-       <marker id="ah" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#1b1b1b"/></marker>
-       <marker id="ahg" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#6b6b6b"/></marker>
-    </defs>
-    <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-       <text x="40" y="42" font-size="21" font-weight="700" fill="#111111">Fig. 1 | BioNeuralNet-Leiden analysis pipeline</text>
-       <text x="40" y="66" font-size="13" fill="#555555">Module-level biomarker discovery from multi-omics matrices. Solid: implemented. Dashed: planned Leiden extension.</text>
-       <line x1="40" y1="80" x2="1200" y2="80" stroke="#111111" stroke-width="1.3"/>
-       <rect x="40" y="96" width="330" height="178" rx="4" fill="#f5f7fa" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="60" y="122" font-size="12" font-weight="700" fill="#2f6690" letter-spacing="1.3">1 &#183; INPUT</text>
-       <text x="60" y="146" font-size="15" font-weight="700" fill="#111111">Multi-omics matrices</text>
-       <rect x="59" y="155" width="145" height="86" fill="none" stroke="#1b1b1b" stroke-width="1"/>
-       <rect x="60" y="156" width="17" height="16" fill="#2f6690"/><rect x="78" y="156" width="17" height="16" fill="#a9c8dd"/><rect x="96" y="156" width="17" height="16" fill="#e8eff5"/><rect x="114" y="156" width="17" height="16" fill="#7fa9c6"/><rect x="132" y="156" width="17" height="16" fill="#1d4f73"/><rect x="150" y="156" width="17" height="16" fill="#cfe0ec"/><rect x="168" y="156" width="17" height="16" fill="#4e82a8"/><rect x="186" y="156" width="17" height="16" fill="#a9c8dd"/>
-       <rect x="60" y="173" width="17" height="16" fill="#cfe0ec"/><rect x="78" y="173" width="17" height="16" fill="#4e82a8"/><rect x="96" y="173" width="17" height="16" fill="#7fa9c6"/><rect x="114" y="173" width="17" height="16" fill="#e8eff5"/><rect x="132" y="173" width="17" height="16" fill="#a9c8dd"/><rect x="150" y="173" width="17" height="16" fill="#1d4f73"/><rect x="168" y="173" width="17" height="16" fill="#cfe0ec"/><rect x="186" y="173" width="17" height="16" fill="#2f6690"/>
-       <rect x="60" y="190" width="17" height="16" fill="#7fa9c6"/><rect x="78" y="190" width="17" height="16" fill="#e8eff5"/><rect x="96" y="190" width="17" height="16" fill="#2f6690"/><rect x="114" y="190" width="17" height="16" fill="#a9c8dd"/><rect x="132" y="190" width="17" height="16" fill="#4e82a8"/><rect x="150" y="190" width="17" height="16" fill="#7fa9c6"/><rect x="168" y="190" width="17" height="16" fill="#e8eff5"/><rect x="186" y="190" width="17" height="16" fill="#cfe0ec"/>
-       <rect x="60" y="207" width="17" height="16" fill="#1d4f73"/><rect x="78" y="207" width="17" height="16" fill="#cfe0ec"/><rect x="96" y="207" width="17" height="16" fill="#a9c8dd"/><rect x="114" y="207" width="17" height="16" fill="#4e82a8"/><rect x="132" y="207" width="17" height="16" fill="#e8eff5"/><rect x="150" y="207" width="17" height="16" fill="#2f6690"/><rect x="168" y="207" width="17" height="16" fill="#7fa9c6"/><rect x="186" y="207" width="17" height="16" fill="#4e82a8"/>
-       <rect x="60" y="224" width="17" height="16" fill="#a9c8dd"/><rect x="78" y="224" width="17" height="16" fill="#7fa9c6"/><rect x="96" y="224" width="17" height="16" fill="#cfe0ec"/><rect x="114" y="224" width="17" height="16" fill="#1d4f73"/><rect x="132" y="224" width="17" height="16" fill="#7fa9c6"/><rect x="150" y="224" width="17" height="16" fill="#e8eff5"/><rect x="168" y="224" width="17" height="16" fill="#2f6690"/><rect x="186" y="224" width="17" height="16" fill="#e8eff5"/>
-       <text x="60" y="258" font-size="11.5" fill="#555555">p features &#215; n samples</text>
-       <rect x="212" y="163" width="7" height="7" fill="#2f6690"/><text x="226" y="170" font-size="12.5" fill="#111111">RNA-seq expression</text>
-       <rect x="212" y="183" width="7" height="7" fill="#2f6690"/><text x="226" y="190" font-size="12.5" fill="#111111">miRNA expression</text>
-       <rect x="212" y="203" width="7" height="7" fill="#2f6690"/><text x="226" y="210" font-size="12.5" fill="#111111">DNA methylation</text>
-       <rect x="212" y="223" width="7" height="7" fill="#2f6690"/><text x="226" y="230" font-size="12.5" fill="#111111">Copy-number segments</text>
-       <text x="212" y="256" font-size="12" fill="#2f6690">Phenotype vector y</text>
-       <line x1="370" y1="185" x2="394" y2="185" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <rect x="398" y="120" width="230" height="130" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="418" y="150" font-size="15" font-weight="700" fill="#111111">2 &#183; Preprocessing</text>
-       <text x="418" y="178" font-size="13" fill="#333333">Imputation</text>
-       <text x="418" y="198" font-size="13" fill="#333333">z-score standardisation</text>
-       <text x="418" y="218" font-size="13" fill="#333333">Variance filtering</text>
-       <line x1="628" y1="185" x2="652" y2="185" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <rect x="656" y="120" width="290" height="130" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="676" y="150" font-size="15" font-weight="700" fill="#111111">3 &#183; Network construction</text>
-       <text x="676" y="178" font-size="13" fill="#333333">Correlation or partial</text>
-       <text x="676" y="198" font-size="13" fill="#333333">correlation criterion</text>
-       <text x="676" y="222" font-size="13" fill="#333333">Weighted adjacency W</text>
-       <text x="676" y="240" font-size="12" fill="#555555">p &#215; p, zero diagonal</text>
-       <g stroke="#7fa9c6" stroke-width="1.2"><line x1="880" y1="175" x2="925" y2="168"/><line x1="880" y1="175" x2="901" y2="199"/><line x1="925" y1="168" x2="901" y2="199"/><line x1="925" y1="168" x2="935" y2="205"/><line x1="935" y1="205" x2="901" y2="199"/><line x1="935" y1="205" x2="905" y2="232"/><line x1="905" y1="232" x2="901" y2="199"/><line x1="905" y1="232" x2="868" y2="215"/><line x1="868" y1="215" x2="901" y2="199"/><line x1="868" y1="215" x2="880" y2="175"/></g>
-       <g fill="#2f6690"><circle cx="880" cy="175" r="4.5"/><circle cx="925" cy="168" r="4.5"/><circle cx="935" cy="205" r="4.5"/><circle cx="905" cy="232" r="4.5"/><circle cx="868" cy="215" r="4.5"/><circle cx="901" cy="199" r="5.5"/></g>
-       <line x1="946" y1="185" x2="970" y2="185" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <rect x="974" y="120" width="226" height="130" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="994" y="150" font-size="14.5" font-weight="700" fill="#111111">4 &#183; Community detection</text>
-       <text x="994" y="178" font-size="13" fill="#333333">Partition the feature</text>
-       <text x="994" y="198" font-size="13" fill="#333333">network into densely</text>
-       <text x="994" y="218" font-size="13" fill="#333333">connected modules</text>
-       <line x1="1087" y1="250" x2="1087" y2="276" stroke="#1b1b1b" stroke-width="1.4"/>
-       <line x1="1087" y1="276" x2="825" y2="276" stroke="#1b1b1b" stroke-width="1.4"/>
-       <line x1="825" y1="276" x2="825" y2="297" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <line x1="1087" y1="276" x2="1087" y2="297" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#ahg)"/>
-       <rect x="700" y="300" width="250" height="132" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="720" y="330" font-size="15" font-weight="700" fill="#111111">4a &#183; Louvain</text>
-       <text x="720" y="356" font-size="13" fill="#333333">Greedy modularity</text>
-       <text x="720" y="374" font-size="13" fill="#333333">maximisation</text>
-       <text x="720" y="396" font-size="12.5" fill="#555555">louvain_to_adjacency helper</text>
-       <text x="720" y="420" font-size="11" font-weight="700" fill="#2f6690" letter-spacing="1.1">STATUS &#183; IMPLEMENTED</text>
-       <rect x="974" y="300" width="226" height="132" rx="4" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4"/>
-       <text x="994" y="330" font-size="15" font-weight="700" fill="#333333">4b &#183; Leiden</text>
-       <text x="994" y="356" font-size="13" fill="#444444">Refinement gives</text>
-       <text x="994" y="374" font-size="13" fill="#444444">connected communities</text>
-       <text x="994" y="396" font-size="12.5" fill="#666666">leidenalg, python-igraph</text>
-       <text x="994" y="420" font-size="11" font-weight="700" fill="#6b6b6b" letter-spacing="1.1">STATUS &#183; PLANNED</text>
-       <line x1="1087" y1="432" x2="1087" y2="458" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4"/>
-       <line x1="1087" y1="458" x2="827" y2="458" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4"/>
-       <line x1="825" y1="432" x2="825" y2="458" stroke="#1b1b1b" stroke-width="1.4"/>
-       <line x1="826" y1="458" x2="170" y2="458" stroke="#1b1b1b" stroke-width="1.4"/>
-       <line x1="170" y1="458" x2="170" y2="476" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <rect x="40" y="478" width="260" height="142" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="60" y="508" font-size="15" font-weight="700" fill="#111111">5 &#183; Module summary</text>
-       <text x="60" y="536" font-size="13" fill="#333333">Induced subnetwork</text>
-       <text x="60" y="554" font-size="13" fill="#333333">per module</text>
-       <text x="60" y="580" font-size="13" fill="#333333">PCA first principal</text>
-       <text x="60" y="598" font-size="13" fill="#333333">component PC1</text>
-       <line x1="300" y1="549" x2="324" y2="549" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <rect x="328" y="478" width="280" height="142" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="348" y="508" font-size="15" font-weight="700" fill="#111111">6 &#183; Phenotype association</text>
-       <text x="348" y="536" font-size="13" fill="#333333">Pearson r and p-value,</text>
-       <text x="348" y="554" font-size="13" fill="#333333">PC1 versus phenotype</text>
-       <text x="348" y="580" font-size="13" fill="#333333">Sparse or zero-variance</text>
-       <text x="348" y="598" font-size="13" fill="#333333">modules excluded</text>
-       <line x1="608" y1="549" x2="632" y2="549" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <rect x="636" y="478" width="564" height="142" rx="4" fill="#f5f7fa" stroke="#1b1b1b" stroke-width="1.4"/>
-       <text x="656" y="504" font-size="12" font-weight="700" fill="#2f6690" letter-spacing="1.3">7 &#183; OUTPUT</text>
-       <text x="656" y="528" font-size="15" font-weight="700" fill="#111111">Ranked biomarker modules</text>
-       <text x="656" y="554" font-size="13" fill="#333333">Modules ordered by |r|</text>
-       <text x="656" y="574" font-size="13" fill="#333333">Membership tables</text>
-       <text x="656" y="594" font-size="13" fill="#333333">Topology and performance</text>
-       <text x="656" y="612" font-size="13" fill="#333333">figures</text>
-       <text x="932" y="500" font-size="10.5" fill="#777777">association strength |r|</text>
-       <line x1="930" y1="504" x2="930" y2="616" stroke="#1b1b1b" stroke-width="1.1"/>
-       <rect x="932" y="508" width="238" height="14" fill="#2f6690"/><rect x="932" y="531" width="205" height="14" fill="#2f6690"/><rect x="932" y="554" width="168" height="14" fill="#7fa9c6"/><rect x="932" y="577" width="130" height="14" fill="#7fa9c6"/><rect x="932" y="600" width="94" height="14" fill="#cfe0ec"/>
-       <g font-size="10.5" fill="#333333" text-anchor="end"><text x="924" y="519">M1</text><text x="924" y="542">M2</text><text x="924" y="565">M3</text><text x="924" y="588">M4</text><text x="924" y="611">M5</text></g>
-       <line x1="40" y1="650" x2="74" y2="650" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
-       <text x="86" y="654" font-size="12" fill="#333333">Implemented in this repository or in the upstream BioNeuralNet package</text>
-       <line x1="520" y1="650" x2="554" y2="650" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#ahg)"/>
-       <text x="566" y="654" font-size="12" fill="#333333">Planned Leiden extension, not implemented in this repository</text>
-       <rect x="960" y="643" width="14" height="12" fill="#f5f7fa" stroke="#1b1b1b" stroke-width="1"/>
-       <text x="982" y="654" font-size="12" fill="#333333">Data product panel</text>
-    </g>
+   <rect x="0" y="0" width="1240" height="680" fill="#ffffff"/>
+   <defs>
+     <marker id="ah" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#1b1b1b"/></marker>
+     <marker id="ahg" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 z" fill="#6b6b6b"/></marker>
+   </defs>
+   <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+     <text x="40" y="42" font-size="21" font-weight="700" fill="#111111">Fig. 1a | BioNeuralNet-Leiden analysis pipeline</text>
+     <text x="40" y="66" font-size="13" fill="#555555">Solid: implemented. Dashed: planned Leiden extension. Panels b to e below show real outputs of the stages that reference them.</text>
+     <line x1="40" y1="80" x2="1200" y2="80" stroke="#111111" stroke-width="1.3"/>
+     <rect x="40" y="96" width="330" height="178" rx="4" fill="#f5f7fa" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="60" y="122" font-size="12" font-weight="700" fill="#2f6690" letter-spacing="1.3">1 &#183; INPUT</text>
+     <text x="60" y="146" font-size="15" font-weight="700" fill="#111111">KIPAN RNA expression matrix</text>
+     <text x="60" y="166" font-size="11.5" fill="#555555">bioneuralnet/datasets/kipan/rna.csv &#183; 24.6 MB</text>
+     <rect x="59" y="176" width="291" height="58" fill="#ffffff" stroke="#1b1b1b" stroke-width="1"/>
+     <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#1b1b1b"><text x="66" y="192">patient,ARAP3_64411,GPRC5C_55890,</text><text x="66" y="206">RASGEF1C_255426,PLAC9_219348,COL4A2_1284,</text><text x="66" y="220">ATP8B2_57198,ARL2_402,AGPAT5_55326, ...</text></g>
+     <text x="60" y="252" font-size="12" fill="#333333">Rows: patients. Columns: transcripts.</text>
+     <text x="60" y="268" font-size="11.5" fill="#2f6690">Plus miRNA, methylation, CNV and phenotype y</text>
+     <line x1="370" y1="185" x2="394" y2="185" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <rect x="398" y="120" width="230" height="130" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="418" y="150" font-size="15" font-weight="700" fill="#111111">2 &#183; Preprocessing</text>
+     <text x="418" y="178" font-size="13" fill="#333333">Imputation</text>
+     <text x="418" y="196" font-size="13" fill="#333333">z-score standardisation</text>
+     <text x="418" y="214" font-size="13" fill="#333333">Variance filtering</text>
+     <text x="418" y="238" font-size="11.5" font-weight="700" fill="#2f6690">see panel b</text>
+     <line x1="628" y1="185" x2="652" y2="185" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <rect x="656" y="120" width="290" height="130" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="676" y="150" font-size="15" font-weight="700" fill="#111111">3 &#183; Network construction</text>
+     <text x="676" y="178" font-size="13" fill="#333333">Correlation or partial correlation</text>
+     <text x="676" y="196" font-size="13" fill="#333333">Weighted adjacency W, zero diagonal</text>
+     <text x="676" y="216" font-size="12" fill="#555555">KIPAN example: 89 nodes, 2346 edges</text>
+     <text x="676" y="238" font-size="11.5" font-weight="700" fill="#2f6690">see panel c</text>
+     <line x1="946" y1="185" x2="970" y2="185" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <rect x="974" y="120" width="226" height="130" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="994" y="150" font-size="14.5" font-weight="700" fill="#111111">4 &#183; Community detection</text>
+     <text x="994" y="178" font-size="13" fill="#333333">Partition the feature</text>
+     <text x="994" y="196" font-size="13" fill="#333333">network into densely</text>
+     <text x="994" y="214" font-size="13" fill="#333333">connected modules</text>
+     <line x1="1087" y1="250" x2="1087" y2="276" stroke="#1b1b1b" stroke-width="1.4"/>
+     <line x1="1087" y1="276" x2="825" y2="276" stroke="#1b1b1b" stroke-width="1.4"/>
+     <line x1="825" y1="276" x2="825" y2="297" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <line x1="1087" y1="276" x2="1087" y2="297" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#ahg)"/>
+     <rect x="700" y="300" width="250" height="132" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="720" y="330" font-size="15" font-weight="700" fill="#111111">4a &#183; Louvain</text>
+     <text x="720" y="356" font-size="13" fill="#333333">Greedy modularity</text>
+     <text x="720" y="374" font-size="13" fill="#333333">maximisation</text>
+     <text x="720" y="396" font-size="12.5" fill="#555555">louvain_to_adjacency helper</text>
+     <text x="720" y="420" font-size="11" font-weight="700" fill="#2f6690" letter-spacing="1.1">STATUS &#183; IMPLEMENTED</text>
+     <rect x="974" y="300" width="226" height="132" rx="4" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4"/>
+     <text x="994" y="330" font-size="15" font-weight="700" fill="#333333">4b &#183; Leiden</text>
+     <text x="994" y="356" font-size="13" fill="#444444">Refinement gives</text>
+     <text x="994" y="374" font-size="13" fill="#444444">connected communities</text>
+     <text x="994" y="396" font-size="12.5" fill="#666666">leidenalg, python-igraph</text>
+     <text x="994" y="420" font-size="11" font-weight="700" fill="#6b6b6b" letter-spacing="1.1">STATUS &#183; PLANNED</text>
+     <line x1="1087" y1="432" x2="1087" y2="458" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4"/>
+     <line x1="1087" y1="458" x2="827" y2="458" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4"/>
+     <line x1="825" y1="432" x2="825" y2="458" stroke="#1b1b1b" stroke-width="1.4"/>
+     <line x1="826" y1="458" x2="170" y2="458" stroke="#1b1b1b" stroke-width="1.4"/>
+     <line x1="170" y1="458" x2="170" y2="476" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <rect x="40" y="478" width="260" height="142" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="60" y="508" font-size="15" font-weight="700" fill="#111111">5 &#183; Module summary</text>
+     <text x="60" y="534" font-size="13" fill="#333333">Induced subnetwork</text>
+     <text x="60" y="552" font-size="13" fill="#333333">per module</text>
+     <text x="60" y="574" font-size="13" fill="#333333">PCA first principal</text>
+     <text x="60" y="592" font-size="13" fill="#333333">component PC1</text>
+     <text x="60" y="612" font-size="11.5" font-weight="700" fill="#2f6690">see panel d</text>
+     <line x1="300" y1="549" x2="324" y2="549" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <rect x="328" y="478" width="280" height="142" rx="4" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="348" y="508" font-size="15" font-weight="700" fill="#111111">6 &#183; Phenotype association</text>
+     <text x="348" y="534" font-size="13" fill="#333333">Pearson r and p-value,</text>
+     <text x="348" y="552" font-size="13" fill="#333333">PC1 versus phenotype</text>
+     <text x="348" y="574" font-size="13" fill="#333333">Sparse or zero-variance</text>
+     <text x="348" y="592" font-size="13" fill="#333333">modules excluded</text>
+     <text x="348" y="612" font-size="11.5" font-weight="700" fill="#2f6690">see panel e</text>
+     <line x1="608" y1="549" x2="632" y2="549" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <rect x="636" y="478" width="564" height="142" rx="4" fill="#f5f7fa" stroke="#1b1b1b" stroke-width="1.4"/>
+     <text x="656" y="504" font-size="12" font-weight="700" fill="#2f6690" letter-spacing="1.3">7 &#183; OUTPUT</text>
+     <text x="656" y="528" font-size="15" font-weight="700" fill="#111111">Ranked candidate biomarker modules</text>
+     <text x="656" y="554" font-size="13" fill="#333333">Module ranking by association strength and p-value</text>
+     <text x="656" y="574" font-size="13" fill="#333333">Module membership tables per candidate panel</text>
+     <text x="656" y="594" font-size="13" fill="#333333">Figures: network topology, embeddings, variance, performance</text>
+     <text x="656" y="612" font-size="11.5" font-weight="700" fill="#2f6690">see panels b to e</text>
+     <line x1="40" y1="650" x2="74" y2="650" stroke="#1b1b1b" stroke-width="1.4" marker-end="url(#ah)"/>
+     <text x="86" y="654" font-size="12" fill="#333333">Implemented in this repository or in the upstream BioNeuralNet package</text>
+     <line x1="520" y1="650" x2="554" y2="650" stroke="#6b6b6b" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#ahg)"/>
+     <text x="566" y="654" font-size="12" fill="#333333">Planned Leiden extension, not implemented in this repository</text>
+     <rect x="960" y="643" width="14" height="12" fill="#f5f7fa" stroke="#1b1b1b" stroke-width="1"/>
+     <text x="982" y="654" font-size="12" fill="#333333">Input and output data panel</text>
+   </g>
  </svg>
