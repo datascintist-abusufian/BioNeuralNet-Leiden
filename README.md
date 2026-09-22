@@ -12,9 +12,21 @@ The distinction that motivates this repository is between **Louvain** and **Leid
 
 ## Pipeline
 
-![Fig. 1: BioNeuralNet-Leiden analysis pipeline, from multi-omics input matrices through preprocessing, correlation network construction, Louvain community detection with the planned Leiden refinement, module summarisation by PC1 and phenotype association, to ranked candidate biomarker modules](assets/fig1_pipeline.svg)
+![Fig. 1a: BioNeuralNet-Leiden analysis pipeline block diagram, from the KIPAN input matrix through preprocessing, correlation network construction, Louvain community detection with the planned Leiden refinement, module summarisation and phenotype association, to ranked candidate biomarker modules](assets/fig1_pipeline.svg)
 
-*Fig. 1 | Analysis pipeline.* Solid outlines and arrows correspond to code that exists, either in this repository or in the upstream package. The dashed Leiden path is the intended contribution and does not exist yet.
+*Fig. 1a | Analysis pipeline.* Solid outlines and arrows correspond to code that exists, either in this repository or in the upstream package. The dashed Leiden path is the intended contribution and does not exist yet. Each stage cites the panel below that shows its real output.
+
+| b | c |
+| :-- | :-- |
+| ![Distribution of feature variances in the KIPAN matrix](assets/variance_distribution.png) | ![Correlation network for the KIPAN example](assets/kipan_net.png) |
+| Stage 2, variance filtering. Distribution of per-feature variances, the criterion used to drop uninformative features. | Stage 3, network construction. KIPAN correlation network: 89 nodes and 2346 edges, filtered to 27 nodes and 51 edges for display. |
+
+| d | e |
+| :-- | :-- |
+| ![Feature embeddings projected into two dimensions](assets/emb_kipan.png) | ![Cluster correlation with the phenotype, Louvain against SmCCNet](assets/clustercorrelation.png) |
+| Stage 5, module summarisation. Feature embeddings projected from 64 to 2 dimensions, coloured by omics type. | Stage 6, phenotype association. Correlation of each cluster with the phenotype, Louvain against SmCCNet. |
+
+*Fig. 1b-e | Real outputs of the referenced stages,* produced on the KIPAN example and carried over from the upstream BioNeuralNet documentation.
 
 ## Repository contents
 
