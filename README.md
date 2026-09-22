@@ -26,7 +26,12 @@ The distinction that motivates this repository is between **Louvain** and **Leid
 | ![Feature embeddings projected into two dimensions](assets/emb_kipan.png) | ![Cluster correlation with the phenotype, Louvain against SmCCNet](assets/clustercorrelation.png) |
 | Stage 5, module summarisation. Feature embeddings projected from 64 to 2 dimensions, coloured by omics type. | Stage 6, phenotype association. Correlation of each cluster with the phenotype, Louvain against SmCCNet. |
 
-*Fig. 1b-e | Real outputs of the referenced stages,* produced on the KIPAN example and carried over from the upstream BioNeuralNet documentation.
+| f | g |
+| :-- | :-- |
+| ![Random-forest accuracy on raw omics against omics enhanced with the detected modules](assets/raw_enriched_comparison.png) | ![Accuracy, F1-weighted and F1-macro for raw omics against the DPMON pipeline](assets/performance.png) |
+| Stage 7, output. Random-forest accuracy on the global network: 69.8 per cent on raw omics against 74.2 per cent once the detected modules are used to enhance it. | Stage 7, output. Accuracy, F1-weighted and F1-macro for raw omics against the DPMON downstream pipeline. |
+
+*Fig. 1b-g | Real outputs of the referenced stages,* produced on the KIPAN example and carried over from the upstream BioNeuralNet documentation.
 
 ## Repository contents
 
