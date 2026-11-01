@@ -1,0 +1,28 @@
+Licence notice
+==============
+
+Third-party code: bioneuralnet/
+-------------------------------
+
+The files under `bioneuralnet/` (and figures carried over from the upstream
+documentation in `assets/`) are taken from BioNeuralNet:
+
+    Copyright (c) 2025 Vicente Ramos, Big Data Management and Mining Laboratory
+    Source: https://github.com/UCD-BDLab/BioNeuralNet
+
+BioNeuralNet is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International licence
+(CC BY-NC-ND 4.0). The full licence text is available at:
+
+    https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+These files are shared here for non-commercial research purposes only, with
+attribution to the original authors, as the licence requires. All rights in
+that code remain with its authors.
+
+Original material in this repository
+------------------------------------
+
+The README and the pipeline figure `assets/fig1_pipeline.svg` are by
+Md Abu Sufian. No open-source licence is granted for them yet; all rights
+reserved.
