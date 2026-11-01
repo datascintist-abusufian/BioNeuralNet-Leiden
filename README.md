@@ -71,7 +71,7 @@ This is a work in progress and is not installable as it stands. Three points are
 
 ## Licence
 
-No licence file is present in this repository. The vendored code remains subject to the upstream BioNeuralNet licence, which should be checked before redistributing or reusing it.
+The code under `bioneuralnet/` is from [BioNeuralNet](https://github.com/UCD-BDLab/BioNeuralNet) (© 2025 Vicente Ramos, Big Data Management and Mining Laboratory) and is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). It is shared here for non-commercial research use with attribution. See `LICENSE` for details.
 
 ## Author
 
